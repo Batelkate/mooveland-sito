@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mooveland – Argilla Moovelab e Arnica Mooveland: formulazioni professionali naturali per dolori articolari, muscolari, traumi e recupero sportivo. Sviluppate da un Osteopata e Massofisioterapista." />
+  <meta name="keywords" content="argilla moovelab, arnica mooveland, dolori articolari, antinfiammatorio naturale, osteopata, massofisioterapista, gel arnica, impacco argilla, recupero sportivo, tendinite, artrosi" />
+  <title>Mooveland – Ferma il Dolore con la Natura</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       DESIGN SYSTEM – COLORI LOGO MOOVELAND
+       MOOVE: teal/cyan  #00AACC / #0099BB
+       LAND : blu scuro  #1A2F5A / #1C2B3A
+       Accento chiaro    #E8F8FC
+       Sfondo sezione    #F4FAFD
+    ============================================================ */
+    :root {
+      --teal:          #00AACC;
+      --teal-dark:     #0088AA;
+      --teal-deeper:   #006688;
+      --navy:          #1A2F5A;
+      --navy-dark:     #111E3A;
+      --teal-light:    #E0F5FA;
+      --teal-xlight:   #F4FAFD;
+      --white:         #FFFFFF;
+      --dark:          #1C1C1E;
+      --muted:         #4A5568;
+      --border:        #B8E4F0;
+      --red-badge:     #E53935;
+      --price-old:     #9E9E9E;
+
+      --font-h: 'Montserrat', sans-serif;
+      --font-b: 'Inter', sans-serif;
+
+      --r-sm: 6px;
+      --r-md: 14px;
+      --r-lg: 22px;
+      --r-xl: 32px;
+
+      --shadow-card: 0 6px 32px rgba(0,130,170,0.13);
+      --shadow-btn:  0 4px 18px rgba(0,170,204,0.38);
+      --tr: 0.22s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-b); background: var(--white); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4 { font-family: var(--font-h); line-height: 1.12; }
+
+    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 84px 0; }
+
+    /* ── EYEBROW ── */
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-h);
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(0,170,204,0.10);
+      padding: 4px 14px; border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: var(--navy);
+      color: #fff;
+      text-align: center;
+      font-family: var(--font-h);
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 11px 20px;
+    }
+    .urgency-bar span { color: var(--teal); }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--white);
+      border-bottom: 2px solid var(--teal-light);
+      box-shadow: 0 2px 18px rgba(0,130,170,0.10);
+    }
+    .site-header__inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 20px; max-width: 1120px; margin: 0 auto;
+    }
+    .logo {
+      font-family: var(--font-h);
+      font-size: 1.6rem; font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+    }
+    .logo span { color: var(--teal); }
+    .header-cta {
+      background: var(--teal);
+      color: var(--white);
+      font-family: var(--font-h); font-weight: 700; font-size: 0.85rem;
+      padding: 10px 24px; border-radius: 999px;
+      transition: background var(--tr), transform var(--tr);
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: var(--teal-dark); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(145deg, var(--navy-dark) 0%, #1E3F72 55%, #0077AA 100%);
+      color: var(--white);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; bottom: -2px; left: 0; right: 0; height: 60px;
+      background: var(--white);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .hero__grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 52px;
+      align-items: center;
+    }
+    .hero__badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,170,204,0.18);
+      border: 1px solid rgba(0,170,204,0.45);
+      color: var(--teal);
+      font-family: var(--font-h); font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 6px 16px; border-radius: 999px;
+      margin-bottom: 26px;
+    }
+    .hero__title {
+      font-size: clamp(2.1rem, 5.5vw, 3.5rem);
+      font-weight: 900; line-height: 1.08;
+      margin-bottom: 22px;
+    }
+    .hero__title .accent { color: var(--teal); }
+    .hero__sub {
+      font-size: 1.05rem; color: rgba(255,255,255,0.80);
+      line-height: 1.68; margin-bottom: 38px;
+    }
+    .hero__sub strong { color: var(--white); font-weight: 700; }
+    .hero__ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: var(--teal); color: var(--white);
+      font-family: var(--font-h); font-weight: 800; font-size: 1rem;
+      padding: 16px 34px; border-radius: 999px;
+      box-shadow: var(--shadow-btn);
+      transition: background var(--tr), transform var(--tr), box-shadow var(--tr);
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,170,204,0.50); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: transparent; color: var(--white);
+      font-family: var(--font-h); font-weight: 600; font-size: 1rem;
+      padding: 15px 28px; border-radius: 999px;
+      border: 2px solid rgba(255,255,255,0.32);
+      transition: border-color var(--tr), background var(--tr);
+      cursor: pointer;
+    }
+    .btn-ghost:hover { border-color: var(--teal); background: rgba(0,170,204,0.08); }
+
+    .hero__trust { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 34px; }
+    .hero__trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; color: rgba(255,255,255,0.72);
+    }
+    .hero__trust-item svg { width: 15px; height: 15px; fill: var(--teal); flex-shrink: 0; }
+
+    /* Colonna immagine hero */
+    .hero__img-col {
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+    }
+    .hero__product-img {
+      width: 100%; max-width: 360px;
+      border-radius: var(--r-xl);
+      filter: drop-shadow(0 12px 40px rgba(0,0,0,0.45));
+      position: relative; z-index: 2;
+    }
+    /* Glow decorativo dietro il prodotto */
+    .hero__img-col::before {
+      content: '';
+      position: absolute;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(0,170,204,0.25) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    /* Placeholder se immagine non carica */
+    .hero__product-placeholder {
+      width: 100%; max-width: 360px;
+      aspect-ratio: 1;
+      background: rgba(255,255,255,0.06);
+      border: 2px dashed rgba(0,170,204,0.4);
+      border-radius: var(--r-xl);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; padding: 24px;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.82rem; text-align: center;
+    }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--teal-xlight);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 30px 0;
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: var(--font-h); font-size: 2rem; font-weight: 900;
+      color: var(--navy); line-height: 1;
+    }
+    .stat-num span { color: var(--teal); }
+    .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+    /* ── MANIFESTO FONDATORE ── */
+    .manifesto { background: var(--white); }
+    .manifesto__grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .founder-frame {
+      background: linear-gradient(145deg, var(--navy-dark) 0%, #1E3F72 100%);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      aspect-ratio: 3/4; max-height: 500px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      padding: 28px; position: relative;
+    }
+    .founder-frame__bg {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 14px; color: rgba(255,255,255,0.25);
+      font-size: 0.82rem; text-align: center; padding: 20px;
+    }
+    .founder-frame__bg svg { width: 72px; height: 72px; fill: rgba(0,170,204,0.22); }
+    .founder-frame__card {
+      position: relative; z-index: 2;
+      background: rgba(255,255,255,0.09);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--r-md);
+      padding: 20px 24px; text-align: center; width: 100%;
+    }
+    .founder-frame__name {
+      font-family: var(--font-h); font-weight: 800;
+      font-size: 1.05rem; color: var(--white); margin-bottom: 4px;
+    }
+    .founder-frame__role { font-size: 0.78rem; color: var(--teal); font-weight: 600; }
+    .credential-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; justify-content: center; }
+    .credential-tag {
+      background: rgba(0,170,204,0.14); border: 1px solid rgba(0,170,204,0.32);
+      color: var(--teal); font-family: var(--font-h);
+      font-size: 0.66rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 4px 11px; border-radius: 999px;
+    }
+
+    .section-title {
+      font-family: var(--font-h);
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 800; color: var(--navy);
+      margin-bottom: 20px; line-height: 1.15;
+    }
+    .section-title .accent { color: var(--teal); }
+
+    .manifesto__quote {
+      border-left: 4px solid var(--teal);
+      padding: 18px 22px;
+      background: var(--teal-light);
+      border-radius: 0 var(--r-md) var(--r-md) 0;
+      margin: 28px 0;
+      font-style: italic; font-size: 1.05rem;
+      color: var(--navy); font-weight: 500; line-height: 1.6;
+    }
+    .manifesto__body { color: var(--muted); line-height: 1.78; font-size: 0.96rem; }
+    .manifesto__body p { margin-bottom: 15px; }
+    .manifesto__body strong { color: var(--navy); font-weight: 600; }
+
+    /* ── BENEFICI STRIP ── */
+    .benefits { background: var(--navy); padding: 64px 0; }
+    .benefits__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .benefit-item { text-align: center; color: var(--white); }
+    .benefit-icon {
+      width: 58px; height: 58px;
+      background: rgba(0,170,204,0.13);
+      border: 1px solid rgba(0,170,204,0.25);
+      border-radius: var(--r-md);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .benefit-icon svg { width: 26px; height: 26px; fill: var(--teal); }
+    .benefit-title { font-family: var(--font-h); font-weight: 700; font-size: 0.92rem; margin-bottom: 7px; }
+    .benefit-desc { font-size: 0.80rem; color: rgba(255,255,255,0.62); line-height: 1.52; }
+
+    /* ── PRODOTTI ── */
+    .products { background: var(--teal-xlight); }
+    .products__header { text-align: center; margin-bottom: 54px; }
+    .products__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+
+    .product-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      position: relative;
+      transition: box-shadow var(--tr), transform var(--tr);
+    }
+    .product-card:hover { box-shadow: var(--shadow-card); transform: translateY(-5px); }
+
+    .product-card__badges {
+      position: absolute; top: 18px; left: 18px;
+      display: flex; gap: 7px; z-index: 2;
+    }
+    .badge {
+      font-family: var(--font-h); font-size: 0.66rem;
+      font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 999px;
+    }
+    .badge-red { background: var(--red-badge); color: #fff; }
+    .badge-navy { background: var(--navy); color: var(--teal); }
+    .badge-teal { background: var(--teal); color: var(--white); }
+
+    /* Immagine prodotto */
+    .product-card__img-wrap {
+      background: linear-gradient(135deg, var(--teal-light) 0%, #c8ecf6 100%);
+      aspect-ratio: 1 / 1;
+      display: flex; align-items: center; justify-content: center;
+      padding: 32px; position: relative;
+    }
+    .product-card__img-wrap img {
+      max-height: 260px; width: auto;
+      filter: drop-shadow(0 8px 24px rgba(0,100,150,0.22));
+      transition: transform var(--tr);
+    }
+    .product-card:hover .product-card__img-wrap img { transform: scale(1.04); }
+
+    .product-card__body { padding: 28px 26px; flex: 1; display: flex; flex-direction: column; }
+    .product-name {
+      font-family: var(--font-h); font-size: 1.3rem; font-weight: 800;
+      color: var(--navy); margin-bottom: 5px; line-height: 1.2;
+    }
+    .product-tagline { font-size: 0.86rem; color: var(--muted); font-style: italic; margin-bottom: 18px; }
+
+    .mode-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+    .mode-tag {
+      background: var(--navy); color: var(--white);
+      font-family: var(--font-h); font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 5px 13px; border-radius: 999px;
+    }
+
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+    .feature-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.87rem; color: var(--muted); line-height: 1.5;
+    }
+    .feature-list li svg { width: 16px; height: 16px; fill: var(--teal); flex-shrink: 0; margin-top: 2px; }
+
+    .ingredients { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .ingredient {
+      background: var(--teal-light); color: var(--navy);
+      font-size: 0.7rem; font-weight: 600;
+      padding: 4px 11px; border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+
+    .pricing { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+    .price-new {
+      font-family: var(--font-h); font-size: 2.1rem; font-weight: 900;
+      color: var(--navy); line-height: 1;
+    }
+    .price-old {
+      font-size: 1rem; color: var(--price-old);
+      text-decoration: line-through; font-weight: 500;
+    }
+    .price-save {
+      background: var(--red-badge); color: #fff;
+      font-family: var(--font-h); font-size: 0.7rem; font-weight: 800;
+      padding: 3px 10px; border-radius: 999px;
+    }
+    .price-label { font-size: 0.7rem; color: var(--price-old); display: block; margin-top: 2px; }
+
+    .btn-cart {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--teal); color: var(--white);
+      font-family: var(--font-h); font-weight: 800; font-size: 1rem;
+      padding: 17px 24px; border-radius: 999px; border: none;
+      box-shadow: var(--shadow-btn); cursor: pointer;
+      transition: background var(--tr), transform var(--tr), box-shadow var(--tr);
+      margin-top: auto;
+    }
+    .btn-cart:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,170,204,0.45); }
+    .btn-cart svg { width: 20px; height: 20px; fill: var(--white); }
+
+    .stock-note {
+      text-align: center; font-size: 0.76rem;
+      color: var(--red-badge); font-weight: 600;
+      margin-top: 12px;
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+    }
+    .stock-note svg { width: 12px; height: 12px; fill: currentColor; }
+
+    /* ── INDICAZIONI D'USO ── */
+    .indicazioni { background: var(--white); }
+    .indicazioni__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .uso-card {
+      background: var(--teal-xlight);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 32px 28px;
+    }
+    .uso-card__title {
+      font-family: var(--font-h); font-weight: 800;
+      font-size: 1.05rem; color: var(--navy);
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .uso-card__title svg { width: 22px; height: 22px; fill: var(--teal); }
+    .uso-steps { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .uso-steps li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 0.88rem; color: var(--muted); line-height: 1.55;
+    }
+    .uso-steps li .step-num {
+      background: var(--teal); color: var(--white);
+      font-family: var(--font-h); font-weight: 800; font-size: 0.72rem;
+      min-width: 22px; height: 22px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    /* ── FAQ ── */
+    .faq { background: var(--teal-xlight); }
+    .faq__header { text-align: center; margin-bottom: 50px; }
+    .faq__list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: var(--r-md); overflow: hidden;
+      transition: border-color var(--tr);
+    }
+    .faq-item.open { border-color: var(--teal); }
+    .faq-trigger {
+      width: 100%; background: none; border: none;
+      padding: 20px 24px;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 16px;
+      cursor: pointer; text-align: left;
+    }
+    .faq-q {
+      font-family: var(--font-h); font-size: 0.95rem; font-weight: 700;
+      color: var(--navy); line-height: 1.4;
+    }
+    .faq-icon {
+      width: 28px; height: 28px; min-width: 28px;
+      background: var(--teal-light); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform var(--tr), background var(--tr);
+    }
+    .faq-item.open .faq-icon { background: var(--teal); transform: rotate(45deg); }
+    .faq-icon svg { width: 14px; height: 14px; fill: var(--navy); }
+    .faq-item.open .faq-icon svg { fill: var(--white); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(.4,0,.2,1); }
+    .faq-item.open .faq-answer { max-height: 420px; }
+    .faq-answer-inner {
+      padding: 0 24px 22px;
+      font-size: 0.9rem; color: var(--muted); line-height: 1.75;
+      border-top: 1px solid var(--border); padding-top: 18px;
+    }
+    .faq-answer-inner strong { color: var(--navy); font-weight: 600; }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--navy-dark); color: rgba(255,255,255,0.6);
+      padding: 44px 20px; text-align: center;
+    }
+    .footer-logo { font-family: var(--font-h); font-size: 1.5rem; font-weight: 900; color: var(--white); margin-bottom: 10px; }
+    .footer-logo span { color: var(--teal); }
+    .footer-tagline { font-size: 0.82rem; margin-bottom: 24px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px; margin-bottom: 22px; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.45); transition: color var(--tr); }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-legal { font-size: 0.73rem; color: rgba(255,255,255,0.28); line-height: 1.65; max-width: 680px; margin: 0 auto; }
+
+    /* ── RESPONSIVE TABLET ── */
+    @media (max-width: 900px) {
+      .benefits__grid { grid-template-columns: repeat(2,1fr); }
+      .stats-grid { grid-template-columns: repeat(2,1fr); gap: 20px; }
+    }
+
+    /* ── RESPONSIVE MOBILE ── */
+    @media (max-width: 640px) {
+      .section { padding: 56px 0; }
+      .site-header__inner { padding: 12px 16px; }
+      .logo { font-size: 1.3rem; }
+      .header-cta { font-size: 0.78rem; padding: 9px 18px; }
+
+      .hero { padding: 50px 0 60px; }
+      .hero__grid { grid-template-columns: 1fr; gap: 38px; text-align: center; }
+      .hero__ctas { justify-content: center; }
+      .hero__trust { justify-content: center; }
+      .hero__img-col { order: -1; }
+      .hero__product-placeholder { max-width: 280px; margin: 0 auto; }
+
+      .manifesto__grid { grid-template-columns: 1fr; gap: 36px; }
+      .founder-frame { max-height: 300px; }
+
+      .products__grid { grid-template-columns: 1fr; gap: 26px; }
+      .product-card__body { padding: 22px 20px; }
+      .price-new { font-size: 1.75rem; }
+
+      .benefits { padding: 48px 0; }
+      .benefits__grid { grid-template-columns: repeat(2,1fr); gap: 18px; }
+
+      .indicazioni__grid { grid-template-columns: 1fr; gap: 24px; }
+
+      .faq { padding: 56px 0; }
+      .faq-trigger { padding: 16px 18px; }
+      .faq-answer-inner { padding: 0 18px 18px; padding-top: 14px; }
+    }
+    @media (max-width: 380px) {
+      .hero__title { font-size: 1.85rem; }
+      .section-title { font-size: 1.5rem; }
+      .benefits__grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar" role="banner">
+    🏆 Formulazioni Professionali da Studio Osteopatico &nbsp;|&nbsp; <span>Prezzi Esclusivi Online</span> &nbsp;|&nbsp; Spedizione gratuita sopra i 39€
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <div class="logo"><span>MOOVE</span>LAND</div>
+      <a href="#prodotti" class="header-cta">Acquista Ora →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====================================================
+         SEZIONE 1: HERO
+    ===================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__grid">
+
+          <!-- Testo -->
+          <div>
+            <div class="hero__badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              Osteopata · Massofisioterapista · Chinesiologo
+            </div>
+
+            <h1 class="hero__title" id="hero-title">
+              <span class="accent">Ferma il Dolore.</span><br>
+              Ritrova il Tuo<br>Movimento.
+            </h1>
+
+            <p class="hero__sub">
+              Formulazioni naturali ad alta concentrazione sviluppate da un <strong>professionista della salute</strong> che lavora ogni giorno con atleti d'élite e pazienti con dolori cronici. <strong>Non marketing. Solo risultati.</strong>
+            </p>
+
+            <div class="hero__ctas">
+              <a href="#prodotti" class="btn-primary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM5.2 5H3V3H1v2h2l3.6 8.59L5.25 14c-.16.28-.25.61-.25.96C5 16.1 5.9 17 7 17h12v-2H7.42c-.13 0-.25-.07-.33-.17l.01-.06.9-1.77H19c.75 0 1.41-.41 1.75-1.03L23 7H5.21z"/></svg>
+                Scopri i Prodotti
+              </a>
+              <a href="#manifesto" class="btn-ghost">La Nostra Storia</a>
+            </div>
+
+            <div class="hero__trust" role="list">
+              <div class="hero__trust-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Testato su atleti professionisti
+              </div>
+              <div class="hero__trust-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Formula sviluppata in studio clinico
+              </div>
+              <div class="hero__trust-item" role="listitem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Evidenze scientifiche PubMed
+              </div>
+            </div>
+          </div>
+
+          <!-- Immagine prodotti -->
+          <div class="hero__img-col">
+            <!--
+              Per inserire le foto reali dei prodotti:
+              <img src="{{ 'hero-products.png' | asset_url }}" alt="Argilla Moovelab e Arnica Mooveland" class="hero__product-img" />
+            -->
+            <div class="hero__product-placeholder">
+              <svg viewBox="0 0 24 24" width="64" height="64" fill="rgba(0,170,204,0.35)" aria-hidden="true"><path d="M9 2h6l1 4H8L9 2zm-2 4h10l1 14H6L7 6zm5 2a5 5 0 0 0 0 10 5 5 0 0 0 0-10z"/></svg>
+              <span style="color:rgba(255,255,255,0.5);font-size:0.82rem;">
+                [Foto barattoli Argilla Moovelab<br>+ Arnica Mooveland]
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">250<span>ml</span></div>
+            <div class="stat-label">Formato professionale</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span>Alta</span></div>
+            <div class="stat-label">Concentrazione principi attivi</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2<span>in1</span></div>
+            <div class="stat-label">Argilla: impacco + crema quotidiana</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span>100%</span></div>
+            <div class="stat-label">Ingredienti naturali</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================
+         SEZIONE 2: MANIFESTO
+    ===================================================== -->
+    <section class="manifesto section" id="manifesto" aria-labelledby="manifesto-title">
+      <div class="container">
+        <div class="manifesto__grid">
+
+          <!-- Foto fondatore -->
+          <div>
+            <div class="founder-frame">
+              <!--
+                Per inserire la foto del fondatore:
+                <img src="{{ 'fondatore.jpg' | asset_url }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" alt="Il Fondatore Mooveland" />
+              -->
+              <div class="founder-frame__bg" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                [Foto del Fondatore<br>in studio con i pazienti]
+              </div>
+              <div class="founder-frame__card">
+                <p class="founder-frame__name">Il Fondatore Mooveland</p>
+                <p class="founder-frame__role">Osteopata · Massofisioterapista · Chinesiologo</p>
+                <div class="credential-tags">
+                  <span class="credential-tag">D.O. Osteopatia</span>
+                  <span class="credential-tag">Massofisioterapista</span>
+                  <span class="credential-tag">Chinesiologo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testo manifesto -->
+          <div>
+            <span class="eyebrow">Il Manifesto del Fondatore</span>
+            <h2 class="section-title" id="manifesto-title">
+              La Formula Nasce<br>
+              <span class="accent">Sul Campo, Non in Laboratorio.</span>
+            </h2>
+
+            <blockquote class="manifesto__quote">
+              "Ogni giorno lavoro su mani, spalle, ginocchia e schiene di atleti professionisti e persone che convivono con dolori cronici. Nessun prodotto commerciale mi soddisfaceva. Così ho creato io stesso le formule che avrei voluto avere."
+            </blockquote>
+
+            <div class="manifesto__body">
+              <p>Da Osteopata, Massofisioterapista e Chinesiologo, ho testato personalmente ogni formulazione sulle mie mani e sui miei pazienti. I fanghi di argilla tradizionali si seccano, si sfarinano, tirano la pelle. I gel all'arnica del supermercato? Concentrazioni quasi omeopatiche.</p>
+              <p>Dopo <strong>centinaia di sessioni in studio</strong> e anni di ricerca sulle evidenze scientifiche pubblicate su PubMed, ho selezionato i principi attivi più efficaci e le concentrazioni giuste per ogni problematica.</p>
+              <p><strong>Mooveland nasce così:</strong> non da un'azienda di marketing, ma da chi conosce il dolore dei pazienti e sa esattamente di cosa hanno bisogno. Risultati reali, formulazioni professionali, accessibili a tutti.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICI -->
+    <section class="benefits" aria-label="Perché scegliere Mooveland">
+      <div class="container">
+        <div class="benefits__grid">
+          <div class="benefit-item">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.72L13 17v5h5l-1.22-1.22C19.91 19.07 22 15.76 22 12c0-5.18-3.95-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12c0 3.76 2.09 7.07 5.22 8.78L6 22h5v-5l-2.28 2.28C7.09 18.11 6 15.17 6 12c0-4.08 3.05-7.44 7-7.93V2.05z"/></svg>
+            </div>
+            <h3 class="benefit-title">Azione Rapida</h3>
+            <p class="benefit-desc">Principi attivi ad alta concentrazione che penetrano in profondità nei tessuti fin dai primi minuti.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-8 2v.28C10.67 5.8 8.66 7 7 7c-.79 0-1.6.18-2.36.46C8 6 12 5.5 12 5.5c-.5 1-1 4 2 6.5-3-1-4-1-5-1 1 1 3 2 4 2-2 3-1 5.5 0 7C8 17.5 7 14 7 14s-2 3-2 5.5L12 22c6.37-1.67 10-10 5-14z"/></svg>
+            </div>
+            <h3 class="benefit-title">100% Naturale</h3>
+            <p class="benefit-desc">Estratti botanici selezionati supportati da studi scientifici pubblicati su PubMed.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg>
+            </div>
+            <h3 class="benefit-title">Qualità Clinica</h3>
+            <p class="benefit-desc">Sviluppate e testate in studio da un professionista sanitario che le usa ogni giorno sui pazienti.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
+            </div>
+            <h3 class="benefit-title">Dual-Use Pro</h3>
+            <p class="benefit-desc">L'Argilla: impacco notturno intensivo oppure crema quotidiana assorbibile. Due trattamenti in uno.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE 3: VETRINA PRODOTTI
+    ===================================================== -->
+    <section class="products section" id="prodotti" aria-labelledby="products-title">
+      <div class="container">
+        <div class="products__header">
+          <span class="eyebrow">I Nostri Prodotti</span>
+          <h2 class="section-title" id="products-title">
+            Due Formule, <span class="accent">Un Solo Obiettivo:</span><br>
+            Fermare il Dolore.
+          </h2>
+          <p style="color:var(--muted);max-width:580px;margin:0 auto;font-size:0.94rem;line-height:1.7;">
+            Disponibili esclusivamente online. Formula professionale, prezzo accessibile — senza intermediari.
+          </p>
+        </div>
+
+        <div class="products__grid">
+
+          <!-- =========== PRODOTTO 1: ARGILLA MOOVELAB =========== -->
+          <article class="product-card" aria-label="Argilla Moovelab">
+            <div class="product-card__badges">
+              <span class="badge badge-navy">Solo Online</span>
+            </div>
+
+            <div class="product-card__img-wrap">
+              <!--
+                SOSTITUIRE CON IMMAGINE REALE DEL BARATTOLO:
+                <img src="{{ 'argilla-moovelab.png' | asset_url }}" alt="Argilla Moovelab 250ml" />
+                oppure tag HTML standard:
+                <img src="./img/argilla-moovelab.png" alt="Argilla Moovelab 250ml" />
+              -->
+              <div style="display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--navy);opacity:0.4;text-align:center;">
+                <svg viewBox="0 0 24 24" width="72" height="72" fill="currentColor" aria-hidden="true"><path d="M9 2h6l1 4H8L9 2zm-2 4h10l1 14H6L7 6z"/></svg>
+                <span style="font-family:var(--font-h);font-weight:800;font-size:1rem;">Argilla Moovelab</span>
+                <small style="font-size:0.72rem;">[Inserisci foto barattolo]</small>
+              </div>
+            </div>
+
+            <div class="product-card__body">
+              <h3 class="product-name">Argilla Moovelab</h3>
+              <p class="product-tagline">Crema all'Argilla Ventilata — Azione Antidolorifica &amp; Drenante</p>
+
+              <div class="mode-tags" aria-label="Modalità d'uso">
+                <span class="mode-tag">🌙 Impacco Notturno</span>
+                <span class="mode-tag">☀️ Crema Quotidiana</span>
+              </div>
+
+              <ul class="feature-list" aria-label="Caratteristiche principali">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span><strong>Non si secca, non si sfarina</strong> — formula in crema che rimane attiva per tutta la notte</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Potere <strong>osmotico e drenante</strong> per riassorbire edemi e liquidi infiammatori</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Impacco notturno: si rimuove in secondi con <strong>acqua tiepida</strong>, non imbratta i tessuti</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Crema quotidiana: <strong>massaggiare fino ad assorbimento</strong> senza risciacquo</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Indicata per traumi, artrosi, tendiniti, contusioni, distorsioni, dolori sportivi</span>
+                </li>
+              </ul>
+
+              <div class="ingredients" aria-label="Principi attivi">
+                <span class="ingredient">Argilla Ventilata</span>
+                <span class="ingredient">Arnica</span>
+                <span class="ingredient">Artiglio del Diavolo</span>
+                <span class="ingredient">Bromelina (Ananas)</span>
+                <span class="ingredient">Oli Essenziali</span>
+              </div>
+
+              <div class="pricing" aria-label="Prezzo Argilla Moovelab">
+                <div>
+                  <span class="price-new">28,00 €</span>
+                  <span class="price-label">250ml – Prezzo diretto online</span>
+                </div>
+              </div>
+
+              <button class="btn-cart" type="button" aria-label="Aggiungi Argilla Moovelab al carrello">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM5.2 5H3V3H1v2h2l3.6 8.59L5.25 14c-.16.28-.25.61-.25.96C5 16.1 5.9 17 7 17h12v-2H7.42c-.13 0-.25-.07-.33-.17l.01-.06.9-1.77H19c.75 0 1.41-.41 1.75-1.03L23 7H5.21z"/></svg>
+                Aggiungi al Carrello
+              </button>
+
+              <p class="stock-note">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                Disponibilità limitata — ordina subito
+              </p>
+            </div>
+          </article>
+
+          <!-- =========== PRODOTTO 2: ARNICA MOOVELAND =========== -->
+          <article class="product-card" aria-label="Arnica Mooveland">
+            <div class="product-card__badges">
+              <span class="badge badge-teal">Più Venduto</span>
+            </div>
+
+            <div class="product-card__img-wrap">
+              <!--
+                SOSTITUIRE CON IMMAGINE REALE:
+                <img src="{{ 'arnica-mooveland.png' | asset_url }}" alt="Arnica Mooveland Gel" />
+              -->
+              <div style="display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--navy);opacity:0.4;text-align:center;">
+                <svg viewBox="0 0 24 24" width="72" height="72" fill="currentColor" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-8 2v.28C10.67 5.8 8.66 7 7 7c-.79 0-1.6.18-2.36.46C8 6 12 5.5 12 5.5c-.5 1-1 4 2 6.5-3-1-4-1-5-1 1 1 3 2 4 2-2 3-1 5.5 0 7C8 17.5 7 14 7 14s-2 3-2 5.5L12 22c6.37-1.67 10-10 5-14z"/></svg>
+                <span style="font-family:var(--font-h);font-weight:800;font-size:1rem;">Arnica Mooveland</span>
+                <small style="font-size:0.72rem;">[Inserisci foto prodotto]</small>
+              </div>
+            </div>
+
+            <div class="product-card__body">
+              <h3 class="product-name">Arnica Mooveland Gel</h3>
+              <p class="product-tagline">Gel ad Alta Concentrazione — Azione Anti-infiammatoria Immediata</p>
+
+              <div class="mode-tags" aria-label="Tecnologia Active-Dry">
+                <span class="mode-tag">⚡ Active-Dry</span>
+                <span class="mode-tag">💪 Alta Concentrazione</span>
+              </div>
+
+              <ul class="feature-list" aria-label="Caratteristiche principali">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span><strong>Arnica Montana ad alta concentrazione</strong> — azione antiflogistica, antiedematosa, analgesica documentata</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Texture Active-Dry: <strong>si assorbe in secondi</strong>, non unge e non macchia i vestiti</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Penetra in profondità per un <strong>sollievo immediato e duraturo</strong> da dolori muscolari e articolari</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Ideale per <strong>recupero post-sportivo (DOMS)</strong>, contusioni, distorsioni ed ematomi</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Applicare 2-3 volte al giorno; associabile a <strong>crioterapia</strong> in fase acuta</span>
+                </li>
+              </ul>
+
+              <div class="ingredients" aria-label="Principi attivi">
+                <span class="ingredient">Arnica Montana</span>
+                <span class="ingredient">Artiglio del Diavolo</span>
+                <span class="ingredient">Camomilla</span>
+                <span class="ingredient">Tea Tree Oil</span>
+              </div>
+
+              <div class="pricing" aria-label="Prezzo Arnica Mooveland">
+                <div>
+                  <span class="price-new">31,00 €</span>
+                  <span class="price-label">Prezzo diretto online</span>
+                </div>
+              </div>
+
+              <button class="btn-cart" type="button" aria-label="Aggiungi Arnica Mooveland al carrello">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM5.2 5H3V3H1v2h2l3.6 8.59L5.25 14c-.16.28-.25.61-.25.96C5 16.1 5.9 17 7 17h12v-2H7.42c-.13 0-.25-.07-.33-.17l.01-.06.9-1.77H19c.75 0 1.41-.41 1.75-1.03L23 7H5.21z"/></svg>
+                Aggiungi al Carrello
+              </button>
+
+              <p class="stock-note">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                Bestseller — scorte in esaurimento
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE INDICAZIONI D'USO
+    ===================================================== -->
+    <section class="indicazioni section" aria-labelledby="uso-title">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:48px;">
+          <span class="eyebrow">Modalità d'Uso</span>
+          <h2 class="section-title" id="uso-title">
+            Come Usarli per<br><span class="accent">Risultati Ottimali</span>
+          </h2>
+        </div>
+        <div class="indicazioni__grid">
+
+          <div class="uso-card">
+            <div class="uso-card__title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+              Argilla Moovelab — Impacco Notturno
+            </div>
+            <ol class="uso-steps">
+              <li><span class="step-num">1</span><span>Applicare uno strato di <strong>2-3 mm di prodotto</strong> sulla zona dolorante la sera</span></li>
+              <li><span class="step-num">2</span><span>Coprire con pellicola trasparente per un effetto occlusivo potenziato</span></li>
+              <li><span class="step-num">3</span><span>Lasciare agire per <strong>tutta la notte</strong> (minimo 2-3 ore)</span></li>
+              <li><span class="step-num">4</span><span>Rimuovere al mattino con <strong>acqua tiepida</strong> in pochi secondi — nessun residuo</span></li>
+              <li><span class="step-num">5</span><span>Ripetere per più giorni consecutivi fino a significativo miglioramento</span></li>
+            </ol>
+          </div>
+
+          <div class="uso-card">
+            <div class="uso-card__title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8z"/></svg>
+              Arnica Mooveland — Uso Quotidiano
+            </div>
+            <ol class="uso-steps">
+              <li><span class="step-num">1</span><span>Applicare una quantità adeguata di gel sulla zona interessata</span></li>
+              <li><span class="step-num">2</span><span><strong>Massaggiare fino a completo assorbimento</strong> — in pochi secondi</span></li>
+              <li><span class="step-num">3</span><span>Ripetere <strong>2-3 volte al giorno</strong> secondo la necessità</span></li>
+              <li><span class="step-num">4</span><span>In fase acuta: associare a <strong>crioterapia localizzata</strong> per potenziare l'effetto lenitivo</span></li>
+              <li><span class="step-num">5</span><span>Protocollo combinato: Arnica di giorno + Argilla la notte per un'azione h24</span></li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEZIONE 4: FAQ
+    ===================================================== -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq__header">
+          <span class="eyebrow">Domande Frequenti</span>
+          <h2 class="section-title" id="faq-title">
+            Tutto quello che vuoi sapere<br><span class="accent">prima di ordinare</span>
+          </h2>
+        </div>
+
+        <div class="faq__list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+              <span class="faq-q">L'Argilla Moovelab sporca il lenzuolo o il pigiama durante la notte?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-answer-inner">
+                No. A differenza dei fanghi tradizionali che si seccano e si sbriciolano, <strong>l'Argilla Moovelab mantiene la sua consistenza cremosa per tutta la notte</strong>. Aderisce alla pelle senza trasferirsi sui tessuti e si rimuove solo a contatto con l'acqua. Puoi dormire tranquillo, senza pellicola protettiva se non vuoi il potenziamento occlusivo.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+              <span class="faq-q">Come si rimuove l'Argilla al mattino? Ci vuole molto tempo?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-answer-inner">
+                <strong>Bastano pochi secondi e acqua tiepida</strong>. La formula in crema si scioglie e si risciacqua completamente senza sfregare, senza residui e senza irritare la pelle. È una delle differenze fondamentali rispetto ai fanghi tradizionali che richiedono operazioni di pulizia fastidiose e lasciano residui sulla pelle.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+              <span class="faq-q">L'Arnica Mooveland è davvero più concentrata dei gel in farmacia?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-answer-inner">
+                Sì. La maggior parte dei gel all'arnica commerciali contiene concentrazioni minime di principio attivo, diluite per abbattere i costi. <strong>Arnica Mooveland è formulata con un'alta concentrazione di Arnica Montana</strong>, documentata da studi pubblicati su PubMed (2011-2024), potenziata da Artiglio del Diavolo (arpagoside), Camomilla e Tea Tree Oil per un effetto sinergico antinfiammatorio completo.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+              <span class="faq-q">Posso usare entrambi i prodotti insieme sulla stessa zona?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-answer-inner">
+                È il protocollo che consigliamo per i casi più ostinati: <strong>Arnica Mooveland di giorno</strong> (texture Active-Dry, assorbimento immediato, nessun problema sotto i vestiti) e <strong>Argilla Moovelab la notte</strong> come impacco per massimizzare il drenaggio osmotico durante il riposo. Insieme garantiscono un'azione antinfiammatoria e antidolorifica continuativa h24.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+              <span class="faq-q">I prodotti Mooveland sono adatti anche a chi non fa sport?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-answer-inner">
+                Assolutamente sì. Le indicazioni coprono tutte le situazioni in cui sono presenti dolori muscolo-articolari: <strong>artrosi, tendiniti, mal di schiena, cervicale, gonfiori, contratture, dolori posturali cronici</strong>. Sono stati sviluppati in un contesto clinico che include sia atleti che pazienti comuni. Se convivi con dolori cronici quotidiani, questi prodotti sono pensati esattamente per te.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-6" id="faq-q-6">
+              <span class="faq-q">Ci sono controindicazioni o avvertenze d'uso?</span>
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+            </button>
+            <div class="faq-answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
+              <div class="faq-answer-inner">
+                Entrambi i prodotti sono <strong>solo per uso esterno</strong>. Non applicare su cute lesa, irritata o con ferite aperte. Evitare il contatto con occhi e mucose. In caso di reazioni cutanee, sospendere l'uso e consultare un medico. Tenere fuori dalla portata dei bambini. <strong>Non sostituiscono una visita medica</strong> o un percorso riabilitativo per condizioni cliniche specifiche.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-logo"><span>MOOVE</span>LAND</div>
+    <p class="footer-tagline">Formulazioni professionali per il tuo movimento. Nate in studio, pensate per te.</p>
+    <nav class="footer-links" aria-label="Link utili">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Termini e Condizioni</a>
+      <a href="#">Spedizioni e Resi</a>
+      <a href="#">Contatti</a>
+      <a href="#">FAQ</a>
+    </nav>
+    <p class="footer-legal">
+      © 2025 Mooveland – Tutti i diritti riservati.<br>
+      I prodotti Mooveland sono cosmetici per uso topico e non sono farmaci. Non sostituiscono una diagnosi medica né un trattamento terapeutico. Consultare sempre il proprio medico o fisioterapista per condizioni cliniche specifiche. Leggere attentamente le avvertenze riportate sulla confezione.
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT – FAQ ACCORDION -->
+  <script>
+    (function () {
+      'use strict';
+      document.querySelectorAll('.faq-trigger').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var item = btn.closest('.faq-item');
+          var isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item.open').forEach(function (el) {
+            el.classList.remove('open');
+            el.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+        btn.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
