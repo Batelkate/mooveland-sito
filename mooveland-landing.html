@@ -578,6 +578,116 @@
     .bundle-card .ck-teal, .bundle-card .ck-orange { background: rgba(255,255,255,0.25) !important; }
     .bundle-card .badge-dark { background: rgba(255,255,255,0.15) !important; color: #E9D5FF !important; }
     .bundle-card [style*="color:#6B7280"], .bundle-card [style*="color: #6B7280"] { color: rgba(255,255,255,0.65) !important; }
+
+    /* Bundle card - force dark background on all children */
+    .bundle-card,
+    .bundle-card .product-card__body,
+    .bundle-card .product-card__img-wrap { background: transparent !important; }
+    article.bundle-card { background: linear-gradient(145deg, #4C1D95 0%, #5B21B6 35%, #7C3AED 65%, #6D28D9 100%) !important; }
+
+    /* Fix inline color overrides inside bundle */
+    .bundle-card h3[style], .bundle-card span[style*="color"] { color: #fff !important; }
+    .bundle-card [style*="color:#7C3AED"] { color: #D8B4FE !important; }
+    .bundle-card [style*="color:#6B7280"] { color: rgba(255,255,255,0.70) !important; }
+    .bundle-card [style*="color: #6B7280"] { color: rgba(255,255,255,0.70) !important; }
+    .bundle-card .btn-cart-teal[style] {
+      background: rgba(255,255,255,0.18) !important;
+      border: 1.5px solid rgba(255,255,255,0.35) !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
+    }
+    .bundle-card .btn-cart-teal[style]:hover {
+      background: rgba(255,255,255,0.28) !important;
+    }
+    .bundle-card [style*="color:#7C3AED"] { color: #C4B5FD !important; }
+
+    /* Override the div with inline price inside bundle */
+    .bundle-card .price[style] { color: #E9D5FF !important; }
+    .bundle-card [style*="44,99"] { color: #E9D5FF !important; }
+
+    /* ── POLISH LAYER v2 ── */
+
+    /* Bundle card: testo bianco su testo scuro con sfondo viola */
+    .bundle-card * { color: rgba(255,255,255,0.90) !important; }
+    .bundle-card .price-new,
+    .bundle-card [style*="font-size:2"] { color: #F3E8FF !important; font-size: 2.4rem !important; }
+    .bundle-card .eyebrow { background: rgba(255,255,255,0.18) !important; border-color: rgba(255,255,255,0.30) !important; color: #fff !important; }
+    .bundle-card .btn-cart-teal,
+    .bundle-card button { background: rgba(255,255,255,0.18) !important; border: 2px solid rgba(255,255,255,0.40) !important; box-shadow: 0 4px 20px rgba(0,0,0,0.30) !important; color: #fff !important; }
+    .bundle-card .btn-cart-teal:hover,
+    .bundle-card button:hover { background: rgba(255,255,255,0.28) !important; transform: translateY(-3px) scale(1.02) !important; }
+    .bundle-card .badge { background: rgba(255,255,255,0.20) !important; color: #fff !important; }
+    .bundle-card .ingredient-teal,
+    .bundle-card .ingredient-orange { background: rgba(255,255,255,0.14) !important; border-color: rgba(255,255,255,0.25) !important; color: rgba(255,255,255,0.90) !important; }
+    .bundle-card .feature-list li .ck { background: rgba(255,255,255,0.25) !important; }
+    .bundle-card .stock-note { color: #D8B4FE !important; }
+
+    /* Products: immagini più grandi e card più ariose */
+    .product-card__img-wrap { padding: 40px 32px; }
+    .product-card__img-wrap img { max-height: 320px; }
+
+    /* Benefits sezione: più spaziatura e icone più grandi */
+    .benefits { padding: 96px 0; }
+    .benefit-item { padding: 32px 24px; }
+    .benefit-icon { width: 72px; height: 72px; margin-bottom: 22px; }
+    .benefit-icon svg { width: 32px; height: 32px; }
+    .benefit-title { font-size: 1rem; margin-bottom: 10px; }
+    .benefit-desc { font-size: 0.84rem; line-height: 1.65; }
+
+    /* Stats: numeri ancora più impattanti */
+    .stat-num { font-size: 3.2rem; }
+    .stat-label { font-size: 0.82rem; font-weight: 500; }
+
+    /* Footer: più curato */
+    .site-footer {
+      background: linear-gradient(180deg, #070710 0%, #0D0D1A 100%);
+      border-top: 3px solid var(--teal);
+      padding: 64px 24px 48px;
+    }
+    .footer-logo { height: 56px; margin-bottom: 20px; }
+    .footer-tagline { font-size: 0.88rem; color: rgba(255,255,255,0.55); margin-bottom: 32px; }
+    .footer-links { gap: 32px; margin-bottom: 32px; }
+    .footer-links a { font-size: 0.80rem; letter-spacing: 0.03em; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-legal { font-size: 0.74rem; line-height: 1.75; max-width: 720px; }
+
+    /* Header logo più grande */
+    .logo-img { height: 80px; }
+
+    /* Urgency bar: più visibile */
+    .urgency-bar { font-size: 0.82rem; padding: 14px 20px; letter-spacing: 0.05em; }
+
+    /* Manifesto quote: più impattante */
+    .manifesto__quote {
+      border-left: 5px solid var(--teal);
+      background: linear-gradient(135deg, var(--teal-light) 0%, #C8EEF9 100%);
+      padding: 26px 30px;
+      font-size: 1.12rem;
+      font-style: italic;
+      line-height: 1.70;
+      border-radius: 0 20px 20px 0;
+    }
+
+    /* Indicazioni card: più spazio e stile */
+    .indicazioni__grid { gap: 44px; }
+    .uso-card { padding: 40px 34px; }
+    .uso-steps li { font-size: 0.92rem; line-height: 1.60; margin-bottom: 2px; }
+
+    /* FAQ: domande più leggibili */
+    .faq-q { font-size: 0.98rem; line-height: 1.45; }
+    .faq-trigger { padding: 24px 28px; }
+    .faq-answer-inner { font-size: 0.93rem; line-height: 1.82; padding: 0 28px 24px; padding-top: 18px; }
+
+    /* Smooth image loading */
+    img { image-rendering: -webkit-optimize-contrast; }
+
+    /* Section eyebrow spacing */
+    .eyebrow { margin-bottom: 20px; }
+
+    /* Products header eyebrow */
+    .products__header .eyebrow { margin-bottom: 20px; }
+    .products__header .section-title { margin-bottom: 14px; }
+    .products__header p { font-size: 1rem; color: var(--muted); line-height: 1.70; }
+
   </style>
 </head>
 <body>
