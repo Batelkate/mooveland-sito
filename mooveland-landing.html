@@ -55,7 +55,7 @@
     /* HERO */
     .hero { background: linear-gradient(145deg, #0D0D1A 0%, #0A2540 55%, #004F6E 100%); color: var(--white); padding: 72px 0 80px; position: relative; overflow: hidden; }
     .hero::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px; background: var(--white); clip-path: ellipse(55% 100% at 50% 100%); }
-    .hero__grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 52px; align-items: center; }
+    .hero__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
     .hero__badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,168,204,0.18); border: 1px solid rgba(0,168,204,0.40); color: var(--teal); font-family: var(--font-h); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; margin-bottom: 24px; }
     .hero__title { font-size: clamp(2rem, 5.2vw, 3.4rem); font-weight: 900; line-height: 1.08; margin-bottom: 20px; }
     .hero__title .accent { color: var(--teal); }
@@ -69,12 +69,12 @@
     .hero__trust { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 32px; }
     .hero__trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: rgba(255,255,255,0.68); }
     .hero__trust-item svg { width: 14px; height: 14px; fill: var(--teal); flex-shrink: 0; }
-    .hero__img-col { display: flex; justify-content: center; align-items: center; position: relative; }
-    .hero__img-col::before { content: ''; position: absolute; width: 380px; height: 380px; background: radial-gradient(circle, rgba(0,168,204,0.20) 0%, transparent 70%); border-radius: 50%; }
-    .hero__collage { display: flex; align-items: flex-end; justify-content: center; gap: 0; position: relative; z-index: 2; width: 100%; min-height: 360px; }
-    .hero__collage img { width: 55%; max-width: 320px; height: auto; object-fit: contain; filter: drop-shadow(0 16px 40px rgba(0,0,0,0.55)); border-radius: 0; transition: transform var(--tr); }
-    .hero__collage img:first-child { transform: rotate(-6deg) translateX(18px) translateY(10px); }
-    .hero__collage img:last-child  { transform: rotate(5deg) translateX(-18px) translateY(4px); z-index: 3; }
+    .hero__img-col { display: flex; justify-content: center; align-items: center; position: relative; overflow: visible; }
+    .hero__img-col::before { content: ''; position: absolute; width: 520px; height: 520px; background: radial-gradient(circle, rgba(0,168,204,0.22) 0%, transparent 70%); border-radius: 50%; }
+    .hero__collage { display: flex; align-items: flex-end; justify-content: center; gap: 0; position: relative; z-index: 2; width: 105%; min-height: 500px; overflow: visible; }
+    .hero__collage img { width: 65%; max-width: none; height: auto; object-fit: contain; filter: drop-shadow(0 24px 56px rgba(0,0,0,0.70)); border-radius: 0; transition: transform var(--tr); }
+    .hero__collage img:first-child { transform: rotate(-7deg) translateX(24px) translateY(14px); }
+    .hero__collage img:last-child  { transform: rotate(6deg) translateX(-24px) translateY(6px); z-index: 3; }
 
     /* STATS */
     .stats-strip { background: var(--teal-xlight); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 0; }
