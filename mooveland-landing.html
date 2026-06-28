@@ -71,8 +71,8 @@
     .hero__trust-item svg { width: 14px; height: 14px; fill: var(--teal); flex-shrink: 0; }
     .hero__img-col { display: flex; justify-content: center; align-items: center; position: relative; }
     .hero__img-col::before { content: ''; position: absolute; width: 380px; height: 380px; background: radial-gradient(circle, rgba(0,168,204,0.20) 0%, transparent 70%); border-radius: 50%; }
-    .hero__collage { display: flex; align-items: flex-end; justify-content: center; gap: 0; position: relative; z-index: 2; width: 100%; }
-    .hero__collage img { width: 48%; max-width: 210px; height: auto; object-fit: contain; filter: drop-shadow(0 12px 32px rgba(0,0,0,0.45)); border-radius: 0; transition: transform var(--tr); }
+    .hero__collage { display: flex; align-items: flex-end; justify-content: center; gap: 0; position: relative; z-index: 2; width: 100%; min-height: 360px; }
+    .hero__collage img { width: 55%; max-width: 320px; height: auto; object-fit: contain; filter: drop-shadow(0 16px 40px rgba(0,0,0,0.55)); border-radius: 0; transition: transform var(--tr); }
     .hero__collage img:first-child { transform: rotate(-6deg) translateX(18px) translateY(10px); }
     .hero__collage img:last-child  { transform: rotate(5deg) translateX(-18px) translateY(4px); z-index: 3; }
 
