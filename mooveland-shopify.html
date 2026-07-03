@@ -147,14 +147,14 @@
     .ingredients { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
     .ingredient-teal { background: var(--teal-light); color: var(--dark); font-size: 0.7rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--border); }
     .ingredient-orange { background: var(--orange-light); color: var(--dark); font-size: 0.7rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--border-o); }
-    .pricing { display: flex; align-items: baseline; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .pricing { display: flex; align-items: baseline; gap: 10px; margin-top: auto; padding-top: 14px; margin-bottom: 20px; flex-wrap: wrap; }
     .price-new { font-family: var(--font-h); font-size: 2rem; font-weight: 900; line-height: 1; }
     .price-new-teal { color: var(--teal-dark); }
     .price-new-orange { color: var(--orange-dark); }
     .price-label { font-size: 0.7rem; color: var(--muted); display: block; margin-top: 2px; }
-    .btn-cart-teal { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--teal); color: var(--white); font-family: var(--font-h); font-weight: 800; font-size: 1rem; padding: 16px 24px; border-radius: 999px; border: none; box-shadow: var(--shadow-teal); cursor: pointer; transition: background var(--tr), transform var(--tr); margin-top: auto; }
+    .btn-cart-teal { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--teal); color: var(--white); font-family: var(--font-h); font-weight: 800; font-size: 1rem; padding: 16px 24px; border-radius: 999px; border: none; box-shadow: var(--shadow-teal); cursor: pointer; transition: background var(--tr), transform var(--tr); }
     .btn-cart-teal:hover { background: var(--teal-dark); transform: translateY(-2px); }
-    .btn-cart-orange { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--orange); color: var(--white); font-family: var(--font-h); font-weight: 800; font-size: 1rem; padding: 16px 24px; border-radius: 999px; border: none; box-shadow: 0 4px 18px rgba(240,165,0,0.38); cursor: pointer; transition: background var(--tr), transform var(--tr); margin-top: auto; }
+    .btn-cart-orange { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--orange); color: var(--white); font-family: var(--font-h); font-weight: 800; font-size: 1rem; padding: 16px 24px; border-radius: 999px; border: none; box-shadow: 0 4px 18px rgba(240,165,0,0.38); cursor: pointer; transition: background var(--tr), transform var(--tr); }
     .btn-cart-orange:hover { background: var(--orange-dark); transform: translateY(-2px); }
     .btn-cart-teal svg, .btn-cart-orange svg { width: 20px; height: 20px; fill: #fff; }
     .stock-note { text-align: center; font-size: 0.74rem; font-weight: 600; margin-top: 10px; }
@@ -621,6 +621,93 @@
     .bundle-card .feature-list li .ck { background: rgba(255,255,255,0.25) !important; }
     .bundle-card .stock-note { color: #D8B4FE !important; }
 
+    /* ── BUNDLE PREMIUM v3 ── */
+    article.bundle-card {
+      background:
+        radial-gradient(120% 90% at 12% 8%, rgba(240,171,252,0.18) 0%, transparent 55%),
+        radial-gradient(110% 85% at 88% 95%, rgba(96,165,250,0.14) 0%, transparent 55%),
+        linear-gradient(140deg, #3B1D6E 0%, #5B21B6 45%, #7C3AED 100%) !important;
+      border: 1px solid rgba(216,180,254,0.55) !important;
+      box-shadow: 0 0 0 1px rgba(124,58,237,0.20), 0 24px 60px rgba(76,29,149,0.45), 0 4px 16px rgba(124,58,237,0.30) !important;
+    }
+    .bundle-card .bundle-visual {
+      background:
+        radial-gradient(62% 55% at 50% 50%, rgba(240,171,252,0.30) 0%, rgba(167,139,250,0.10) 55%, transparent 78%),
+        linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
+    }
+    .bundle-card .bundle-jar {
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.45);
+      box-shadow: 0 30px 60px rgba(18,5,48,0.55), 0 8px 20px rgba(18,5,48,0.35);
+      transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+    }
+    .bundle-card:hover .bundle-jar--argilla { transform: rotate(-4deg) translateY(-8px) !important; }
+    .bundle-card:hover .bundle-jar--arnica { transform: rotate(3deg) translateY(-8px) !important; }
+    .bundle-card .bundle-flag {
+      background: linear-gradient(135deg, #FDE68A 0%, #F0A500 100%) !important;
+      color: #3B1D6E !important;
+      box-shadow: 0 4px 14px rgba(240,165,0,0.45);
+    }
+    .bundle-card .bundle-flag--glass {
+      background: rgba(30,10,60,0.45) !important;
+      color: #fff !important;
+      border: 1px solid rgba(255,255,255,0.35);
+      box-shadow: none;
+      backdrop-filter: blur(6px);
+    }
+    .bundle-card .bundle-price-row { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+    .bundle-card .bundle-price {
+      font-family: var(--font-h);
+      font-size: 3.2rem !important;
+      font-weight: 900;
+      color: #fff !important;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      text-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+    .bundle-card .bundle-off {
+      background: linear-gradient(135deg, #FDE68A, #F0A500) !important;
+      color: #3B1D6E !important;
+      font-family: var(--font-h);
+      font-weight: 900;
+      font-size: 0.82rem !important;
+      padding: 4px 11px;
+      border-radius: 8px;
+      line-height: 1.3;
+      box-shadow: 0 4px 12px rgba(240,165,0,0.40);
+    }
+    .bundle-card .bundle-old {
+      font-size: 1.05rem !important;
+      color: rgba(255,255,255,0.55) !important;
+      text-decoration: line-through;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .bundle-card .bundle-cta,
+    .bundle-card .bundle-cta[style] {
+      margin-top: auto;
+      background: #fff !important;
+      color: #5B21B6 !important;
+      border: none !important;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.25) !important;
+    }
+    .bundle-card .bundle-cta:hover,
+    .bundle-card .bundle-cta[style]:hover {
+      background: #F5F3FF !important;
+      transform: translateY(-3px) scale(1.02) !important;
+      box-shadow: 0 16px 44px rgba(0,0,0,0.40), 0 4px 12px rgba(0,0,0,0.28) !important;
+    }
+    .bundle-card .bundle-cta svg { fill: #5B21B6 !important; }
+    @media (max-width: 860px) {
+      article.bundle-card { display: flex !important; flex-direction: column !important; }
+      .bundle-card .bundle-visual { min-height: 340px !important; border-radius: 26px 26px 0 0 !important; }
+      .bundle-card .bundle-body { border-radius: 0 0 26px 26px !important; padding: 30px 24px !important; }
+      .bundle-card .bundle-price { font-size: 2.6rem !important; }
+    }
+
+    
+
     /* Products: immagini più grandi e card più ariose */
     .product-card__img-wrap { padding: 40px 32px; }
     .product-card__img-wrap img { max-height: 320px; }
@@ -805,8 +892,8 @@
 
   <header class="site-header">
     <div class="site-header__inner">
-      <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/logo-mooveland.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/logo-mooveland.webp" alt="Mooveland" class="logo-img" />
+      <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/logo-mooveland.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/logo-mooveland.webp" alt="Mooveland" class="logo-img" />
       <a href="#prodotti" class="header-cta">Acquista Ora →</a>
     </div>
   </header>
@@ -846,10 +933,10 @@ src="https://cdn.shopify.com/PLACEHOLDER/logo-mooveland.webp" alt="Mooveland" cl
           </div>
           <div class="hero__img-col">
             <div class="hero__collage">
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab 250ml" />
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland" />
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab 250ml" />
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland" />
             </div>
           </div>
         </div>
@@ -927,8 +1014,8 @@ src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Moove
           <article class="product-card product-card--teal">
             <div class="product-card__badges"><span class="pc-badge pc-badge--teal">Formato 250ml</span><span class="pc-badge pc-badge--teal" style="background:var(--navy);">2-in-1 Notte + Giorno</span></div>
             <div class="product-card__img-wrap">
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab 250ml" />
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab 250ml" />
             </div>
             <div class="product-card__body">
               <h3 class="product-name">Argilla Moovelab</h3>
@@ -961,8 +1048,8 @@ src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moo
           <article class="product-card product-card--orange">
             <div class="product-card__badges"><span class="pc-badge pc-badge--orange">Arnica 98%</span><span class="pc-badge pc-badge--orange" style="background:var(--navy);">Formato 500ml</span></div>
             <div class="product-card__img-wrap">
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland Gel" />
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland Gel" />
             </div>
             <div class="product-card__body">
               <h3 class="product-name">Arnica Mooveland</h3>
@@ -1036,19 +1123,19 @@ src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Moove
       <div class="container">
         <div class="products__grid">
           <article class="product-card bundle-card" style="border:2px solid #C084FC;background:linear-gradient(145deg,#4C1D95 0%,#6D28D9 50%,#7C3AED 100%);display:grid;grid-template-columns:1fr 1fr;grid-column:1/-1;gap:0;align-items:stretch;border-radius:28px;overflow:visible;">
-            <div style="position:relative;min-height:480px;background:linear-gradient(145deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0.04) 100%);border-radius:26px 0 0 26px;overflow:hidden;">
-              <div style="position:absolute;top:12px;left:12px;display:flex;gap:8px;z-index:10;"><span class="badge" style="background:#7C3AED;color:#fff;">Bundle Risparmio</span><span class="badge badge-dark" style="background:rgba(0,0,0,0.4);color:#fff;">-29%</span></div>
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab" style="position:absolute;width:62%;bottom:-10px;left:-20px;transform:rotate(-6deg);filter:drop-shadow(0 20px 44px rgba(0,0,0,0.65));z-index:1;" />
-              <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland" style="position:absolute;width:64%;top:-10px;right:-20px;transform:rotate(5deg);filter:drop-shadow(0 20px 44px rgba(0,0,0,0.65));z-index:2;" />
+            <div class="bundle-visual" style="position:relative;min-height:480px;border-radius:26px 0 0 26px;overflow:hidden;">
+              <div style="position:absolute;top:18px;left:18px;display:flex;gap:8px;z-index:10;flex-wrap:wrap;"><span class="bundle-flag" style="font-family:var(--font-h);font-size:0.66rem;font-weight:800;letter-spacing:0.09em;text-transform:uppercase;padding:6px 14px;border-radius:999px;">&#9733; Il Pi&ugrave; Scelto</span><span class="bundle-flag bundle-flag--glass" style="font-family:var(--font-h);font-size:0.66rem;font-weight:800;letter-spacing:0.09em;text-transform:uppercase;padding:6px 14px;border-radius:999px;">Bundle Risparmio</span></div>
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/argilla-moovelab.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/argilla-moovelab.webp" alt="Argilla Moovelab" class="bundle-jar bundle-jar--argilla" style="position:absolute;width:52%;bottom:8%;left:7%;transform:rotate(-5deg);z-index:2;" />
+              <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/arnica-mooveland.jpg (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Mooveland" class="bundle-jar bundle-jar--arnica" style="position:absolute;width:52%;top:8%;right:7%;transform:rotate(4deg);z-index:1;" />
             </div>
-            <div style="display:flex;flex-direction:column;padding:36px;background:linear-gradient(145deg,rgba(255,255,255,0.06) 0%,rgba(255,255,255,0.02) 100%);border-radius:0 26px 26px 0;">
+            <div class="bundle-body" style="display:flex;flex-direction:column;padding:42px 44px;border-radius:0 26px 26px 0;">
               <h3 style="font-family:var(--font-h);font-size:1.6rem;font-weight:900;color:#fff;margin:0 0 8px;line-height:1.2;">Bundle Completo<br><span style="font-size:0.9rem;color:rgba(255,255,255,0.7);font-weight:600;">Argilla + Arnica</span></h3>
               <p style="color:rgba(255,255,255,0.85);font-size:0.95rem;line-height:1.65;margin:0 0 20px;">Il protocollo h24 completo: <strong style="color:#fff;">Arnica di giorno</strong> per assorbimento immediato, <strong style="color:#fff;">Argilla la notte</strong> come impacco. Benessere muscolare continuo, giorno e notte.</p>
               <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:10px;"><li style="color:rgba(255,255,255,0.9);font-size:0.9rem;">&#x2713; Risparmio di 14,01 &euro; rispetto all&apos;acquisto singolo</li><li style="color:rgba(255,255,255,0.9);font-size:0.9rem;">&#x2713; Protocollo h24 completo</li><li style="color:rgba(255,255,255,0.9);font-size:0.9rem;">&#x2713; Spedizione gratuita inclusa</li></ul>
-              <div style="margin-bottom:20px;"><div style="font-family:var(--font-h);font-size:2.2rem;font-weight:900;color:#fff;line-height:1;">44,99 &euro;</div><div style="font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:line-through;">59,00 &euro;</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:4px;">Prezzo di lancio &mdash; solo online</div></div>
-              <a class="btn-cart-teal" href="/cart/add?id=VARIANT_ID_BUNDLE&quantity=1" style="background:rgba(255,255,255,0.18);border:2px solid rgba(255,255,255,0.5);box-shadow:none;backdrop-filter:blur(8px);color:#fff;margin-top:auto;"><svg viewBox="0 0 24 24"><path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03L19 8H5.21L4.27 4H1v2h2l3.6 8.59L5.25 17c-.16.28-.25.61-.25.95C5 19.1 5.9 20 7 20h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/></svg> Aggiungi Bundle al Carrello</a>
+              <div style="margin-bottom:24px;"><div class="bundle-price-row"><span class="bundle-price">44,99 &euro;</span><span style="display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding-bottom:5px;"><span class="bundle-off">-29%</span><span class="bundle-old">59,00 &euro;</span></span></div><div style="font-size:0.8rem;margin-top:10px;">Prezzo di lancio &mdash; solo online</div></div>
+              <a class="btn-cart-teal bundle-cta" href="/cart/add?id=VARIANT_ID_BUNDLE&quantity=1"><svg viewBox="0 0 24 24"><path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03L19 8H5.21L4.27 4H1v2h2l3.6 8.59L5.25 17c-.16.28-.25.61-.25.95C5 19.1 5.9 20 7 20h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/></svg> Aggiungi Bundle al Carrello</a>
               <div class="cta-trust"><div class="cta-trust__row cta-trust__row--guarantee"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg><span>Soddisfatti o Rimborsati &mdash; <span style="color:#FDE68A;">30 giorni</span></span></div><div class="pay-row"><span class="pay-pill pay-pill--visa">VISA</span><span class="pay-pill pay-pill--mc">Mastercard</span><span class="pay-pill pay-pill--pp">PayPal</span><span class="pay-pill pay-pill--amex">AmEx</span><span class="pay-lock"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg> Pagamento sicuro SSL</span></div><p class="ship-note" style="color:#E9D5FF;">&#10003; Spedizione gratuita inclusa</p></div>
             </div>
           </article>
@@ -1180,8 +1267,8 @@ src="https://cdn.shopify.com/PLACEHOLDER/arnica-mooveland.jpg" alt="Arnica Moove
   </main>
 
   <footer class="site-footer">
-    <img <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/logo-mooveland.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
-src="https://cdn.shopify.com/PLACEHOLDER/logo-mooveland.webp" alt="Mooveland" class="footer-logo" />
+    <!-- SHOPIFY: sostituire con URL CDN dopo upload di files/logo-mooveland.webp (vedi ISTRUZIONI-SHOPIFY.md) -->
+<img src="https://cdn.shopify.com/PLACEHOLDER/logo-mooveland.webp" alt="Mooveland" class="footer-logo" />
     <p class="footer-tagline">Formulazioni professionali per il tuo movimento. Nate in studio, pensate per te.</p>
     <nav class="footer-links">
       <a href="#">Privacy Policy</a><a href="#">Termini e Condizioni</a><a href="#">Spedizioni e Resi</a><a href="#">Contatti</a><a href="#">FAQ</a>
