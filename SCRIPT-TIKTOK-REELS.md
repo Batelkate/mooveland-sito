@@ -56,7 +56,7 @@ Legenda: **[OVERLAY]** = testo in sovraimpressione · **B-ROLL** = suggerimento 
 ## TEMA 3 — Errore comune: stare fermi (G3)
 
 ### Variante TikTok (~30 sec)
-- **HOOK (parlato):** "Smettila di fare questo quando ti fa male la schiena."
+- **HOOK (parlato):** "Smettila di fare questo quando la schiena si fa sentire." <!-- LEGAL-FIX: era "quando ti fa male la schiena" — riferimento diretto al dolore in un contenuto che presenta un cosmetico = claim implicito di azione antidolorifica -->
 - **[OVERLAY]:** "❌ L'errore n°1 quando la schiena si fa sentire"
 - **CORPO (HeyGen):** "Smettila di fare questo quando la schiena si fa sentire: stare fermo. Lo so, l'istinto dice divano. Ma il corpo è fatto per muoversi, e il riposo assoluto oltre le 48 ore spesso peggiora la rigidità. Quindi: cammina, muoviti dolcemente, senza strafare. E la sera concedi ai muscoli un momento di cura. Io uso l'impacco di Argilla Moovelab: lo stendo sulla zona affaticata e lo lascio agire tutta la notte. Al mattino? Via con acqua tiepida in pochi secondi. Movimento di giorno, cura di notte."
 - **CTA finale:** "Se anche tu sei del team divano, scrivilo nei commenti. Ti aspetto."
@@ -98,7 +98,7 @@ Legenda: **[OVERLAY]** = testo in sovraimpressione · **B-ROLL** = suggerimento 
 ### Variante TikTok (~30 sec)
 - **HOOK (parlato):** "Perché TUTTI parlano dell'arnica? Te lo spiego io, che ci lavoro."
 - **[OVERLAY]:** "Arnica: hype o sostanza? 🌼"
-- **CORPO (HeyGen):** "Perché tutti parlano dell'arnica? Te lo spiego io, che ci lavoro. L'Arnica Montana è una pianta di montagna usata da generazioni per il massaggio muscolare. Ma ecco il punto che nessuno ti dice: la concentrazione. Tanti prodotti ne contengono percentuali minime — giusto per scriverla in etichetta. Nella nostra formula è al 98%: tra le concentrazioni più alte che puoi trovare in un cosmetico. Ed è questa la differenza tra 'spalmare qualcosa' e sentire davvero la pelle ringraziare."
+- **CORPO (HeyGen):** "Perché tutti parlano dell'arnica? Te lo spiego io, che ci lavoro. L'Arnica Montana è una pianta di montagna usata da generazioni per il massaggio muscolare. Ma ecco il punto che nessuno ti dice: la concentrazione. In tanti prodotti la trovi in fondo alla lista degli ingredienti. Nella nostra formula è al 98%: quasi tutto il barattolo è arnica. <!-- LEGAL-FIX: era "percentuali minime — giusto per scriverla in etichetta... tra le concentrazioni più alte che puoi trovare in un cosmetico" — denigrazione implicita dei concorrenti (criterio correttezza Reg. 655/2013) + claim comparativo di superiorità non sostanziabile --> Ed è questa la differenza tra 'spalmare qualcosa' e sentire davvero la pelle ringraziare."
 - **CTA finale:** "Gira l'etichetta dei tuoi prodotti e controlla. Poi dimmelo nei commenti."
 - **DIDASCALIA:** Il problema non è l'arnica. È quanta ce n'è dentro. #arnicamontana #arnica #ingredienti #benesseremuscolare #skincaresportiva #imparacontiktok #perte
 - **B-ROLL:** fiore di arnica / immagine montagna; zoom su etichetta con "98%"; texture della crema in macro.
