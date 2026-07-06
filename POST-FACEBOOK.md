@@ -21,7 +21,7 @@ Lavoro ogni giorno con le mie mani sui muscoli delle persone. E c'è una cosa ch
 **Testo:**
 Lavoro ogni giorno con le mie mani sui muscoli delle persone. E c'è una cosa che non ho mai avuto il coraggio di dire ai miei pazienti.
 
-Che quando mi chiedevano "dottore, cosa posso mettermi a casa dopo la seduta?", io non avevo una risposta di cui fossi davvero convinto.
+Che quando mi chiedevano "cosa posso mettermi a casa dopo la seduta?", io non avevo una risposta di cui fossi davvero convinto. <!-- SUP-FIX: rimosso "dottore" dal virgolettato — BLACKLIST-CLAIM.md §d: mai attribuirsi (nemmeno indirettamente, tramite citazione) un titolo medico non dichiarato; la qualifica usata ovunque è "professionista della salute" -->
 
 Per anni ho letto etichette. Prodotti troppo blandi, con ingredienti buoni ma in quantità simboliche. Oppure prodotti pieni di promesse scritte in grande e sostanza scritta in piccolo.
 
@@ -33,7 +33,7 @@ Su questa pagina non troverete miracoli. Troverete quello che dico ogni giorno a
 
 Se vi va, presentatevi nei commenti: qual è la zona che vi si "fa sentire" più spesso a fine giornata?
 
-**Visual:** foto autentica del fondatore in studio, camice, luce da finestra. Niente foto patinate: deve sembrare la persona che è.
+**Visual:** foto autentica del fondatore in studio, abbigliamento professionale sobrio (niente camice <!-- SUP-FIX: BLACKLIST-CLAIM.md §d — evitare la veste clinica nel post fondativo di una pagina che vende i propri prodotti -->), luce da finestra. Niente foto patinate: deve sembrare la persona che è.
 **Hashtag:** #benesseremuscolare #madeinitaly
 **Boost:** SÌ — è il post fondativo. Pubblico: Italia, 45-65, interessi benessere/massaggi/salute naturale/camminata. Ideale come prima campagna di notorietà + fonte per pubblici simili.
 
@@ -103,6 +103,8 @@ DI NOTTE — Argilla Moovelab. Uno strato generoso sulla zona che ha lavorato di
 Giorno più notte: un'attenzione continua, semplice, che non chiede tempo in più — solo due gesti nei momenti che già esistono nella vostra giornata.
 
 Il protocollo completo, con il Bundle dei due prodotti (44,99 € e spedizione gratuita), è su mooveland.it. E c'è la garanzia soddisfatti o rimborsati di 30 giorni: si prova con calma, sulla propria pelle.
+
+Un'ultima cosa, per chiarezza: sono cosmetici — parliamo di benessere della pelle e di sensazioni di sollievo e freschezza. Per qualsiasi problematica di salute, il punto di riferimento resta il vostro medico. <!-- SUP-FIX: aggiunto il disclaimer previsto da BLACKLIST-CLAIM.md regola d'oro 7 per i contenuti pilastro; mancava nel post di conversione principale -->
 
 **Visual:** carosello: 1) i due barattoli affiancati con "GIORNO / NOTTE", 2) applicazione dell'Arnica, 3) impacco serale, 4) risveglio/acqua tiepida. In alternativa video 45-60 sec.
 **Hashtag:** #benesseremuscolare

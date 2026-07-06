@@ -180,7 +180,7 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 - **2:30-3:20 — Zona 3, gambe e polpacci:** sempre dal basso verso l'alto; variante "gambe al muro" 5 min per chi lavora in piedi.
 - **3:20-4:00 — Zona 4, lombare:** dorso delle mani sui muscoli paravertebrali, mai sulla colonna; alternativa con pallina da tennis contro il muro.
 - **4:00-4:40 — Con cosa farlo:** il massaggio funziona anche a mani nude; un buon cosmetico lo rende più piacevole ed efficace come gesto. Di giorno Arnica Mooveland (non unge, freschezza immediata), la sera sulle zone più affaticate impacco di Argilla Moovelab. Prodotti in mano, tono da consiglio, non da spot.
-- **4:40-5:00 — Chiusura + CTA:** "Scegliete una zona e provate stasera: due minuti. Poi tornate a dirmi com'è andata nei commenti. Iscrivetevi: ogni settimana un gesto nuovo. Il protocollo completo è su mooveland.it."
+- **4:40-5:00 — Chiusura + CTA:** promemoria trasparenza: "Ricordate: sono cosmetici — parliamo di benessere della pelle e sensazione di sollievo. Per problematiche di salute, il riferimento è sempre il vostro medico." <!-- SUP-FIX: aggiunto il disclaimer previsto da BLACKLIST-CLAIM.md regola d'oro 7 per i contenuti pilastro; il Long 2 lo aveva, il Long 1 no --> Poi: "Scegliete una zona e provate stasera: due minuti. Poi tornate a dirmi com'è andata nei commenti. Iscrivetevi: ogni settimana un gesto nuovo. Il protocollo completo è su mooveland.it."
 
 **DESCRIZIONE OTTIMIZZATA:**
 Come fare l'automassaggio muscolare a casa: la guida completa di un professionista della salute. Tecnica corretta per collo, trapezio, spalle, gambe e zona lombare, le 3 regole d'oro e gli errori più comuni da evitare.
