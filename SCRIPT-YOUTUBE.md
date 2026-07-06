@@ -35,7 +35,7 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 **TITOLO:** Schiena rigida? L'errore n.1 che quasi tutti fanno
 **SCRIPT (~45s)**
 - *Problema:* "Quando la schiena è rigida, l'istinto dice: fermati e riposa. Sbagliato."
-- *Spiegazione:* "Il corpo è fatto per muoversi. Il riposo assoluto oltre le 48 ore spesso aumenta la sensazione di rigidità."
+- *Spiegazione:* "Il corpo è fatto per muoversi. Le linee guida sono concordi: il riposo assoluto prolungato tende ad aumentare la sensazione di rigidità, invece di alleviarla." <!-- SCI-FIX: era "Il riposo assoluto oltre le 48 ore spesso aumenta la sensazione di rigidità" — rimossa la soglia "48 ore" (falsa precisione); coerente con l'evidenza su lombalgia acuta (stay active > bed rest) senza cut-off orario preciso -->
 - *Gesto pratico:* "Cammina, muoviti dolcemente, cambia posizione spesso. E la sera, concedi ai muscoli un momento di cura."
 - *Prodotto:* "Io uso l'impacco di Argilla Moovelab sulla zona affaticata: lo lascio agire tutta la notte e al mattino via con acqua tiepida in pochi secondi. Muoversi di giorno, coccolare i muscoli di notte."
 **DESCRIZIONE:** L'errore più comune con la schiena rigida: stare fermi. Un professionista della salute spiega perché il movimento dolce aiuta e come usare l'impacco notturno di Argilla Moovelab. mooveland.it
