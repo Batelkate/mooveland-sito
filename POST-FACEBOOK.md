@@ -120,9 +120,9 @@ Mia nonna teneva l'arnica in casa come oggi teniamo i cerotti. Aveva capito qual
 
 L'Arnica Montana è una pianta di montagna, usata da generazioni per il massaggio muscolare. Fin qui, niente di nuovo: lo sapevano le nostre nonne prima di noi.
 
-Quello che spesso non si sa è che tra un prodotto all'arnica e un altro può esserci un mondo di differenza. Il punto è la concentrazione: molti prodotti in commercio ne contengono percentuali minime — quel tanto che basta per scriverla in etichetta.
+Quello che spesso non si sa è che tra un prodotto all'arnica e un altro può esserci un mondo di differenza. Il punto è la concentrazione: da un prodotto all'altro può cambiare moltissimo, e l'etichetta lo racconta sempre. <!-- LEGAL-FIX: era "molti prodotti in commercio ne contengono percentuali minime — quel tanto che basta per scriverla in etichetta" — denigrazione implicita dei concorrenti (criterio correttezza Reg. 655/2013) -->
 
-Quando ho formulato l'Arnica Mooveland ho fatto una scelta precisa: 98%. Tra le concentrazioni più alte che si possano trovare in un cosmetico. Perché è questo che fa la differenza tra "spalmare qualcosa" e sentire davvero la pelle ringraziare dopo il massaggio.
+Quando ho formulato l'Arnica Mooveland ho fatto una scelta precisa: 98%. Quasi tutto il barattolo è arnica, e la trovate al primo posto dell'INCI. <!-- LEGAL-FIX: era "Tra le concentrazioni più alte che si possano trovare in un cosmetico" — claim comparativo di superiorità non sostanziabile senza analisi di mercato documentata --> Perché è questo che fa la differenza tra "spalmare qualcosa" e sentire davvero la pelle ringraziare dopo il massaggio.
 
 Il mio consiglio, che compriate da noi o no: girate il barattolo e leggete l'etichetta. Gli ingredienti sono elencati in ordine di quantità. Se l'arnica è in fondo alla lista, ora sapete cosa significa.
 
@@ -263,10 +263,10 @@ Taggate un collega che a fine turno ha "le gambe che parlano". E ditemi che lavo
 ## POST 11 — I DOMS spiegati con gentilezza (da G12)
 
 **Hook:**
-Siete tornati in palestra (o in bici, o a zappare l'orto) e due giorni dopo vi fa male tutto? Tranquilli: ha un nome, ed è una buona notizia.
+Siete tornati in palestra (o in bici, o a zappare l'orto) e due giorni dopo vi sentite tutti indolenziti? Tranquilli: ha un nome, ed è una buona notizia. <!-- LEGAL-FIX: era "vi fa male tutto" — riferimento diretto al dolore in un post che presenta i prodotti = claim antidolorifico implicito, riservato ai farmaci -->
 
 **Testo:**
-Siete tornati in palestra (o in bici, o a zappare l'orto) e due giorni dopo vi fa male tutto? Tranquilli: ha un nome, ed è una buona notizia.
+Siete tornati in palestra (o in bici, o a zappare l'orto) e due giorni dopo vi sentite tutti indolenziti? Tranquilli: ha un nome, ed è una buona notizia. <!-- LEGAL-FIX: era "vi fa male tutto" — come sopra -->
 
 Si chiamano DOMS: è il termine con cui si indica quell'indolenzimento muscolare che arriva 24-48 ore dopo uno sforzo più intenso del solito. Succede a vent'anni e succede a sessanta, ed è un segnale normale: i muscoli hanno lavorato e si stanno adattando.
 
@@ -371,7 +371,7 @@ Alla mia età ho imparato una cosa sugli acquisti online: la paura non è spende
 
 Su tutti i prodotti Mooveland c'è la garanzia Soddisfatti o Rimborsati di 30 giorni. Funziona esattamente come sembra: ordinate, provate i prodotti con calma, sulla vostra pelle, nelle vostre serate. Se non fanno per voi, ci scrivete e vi rimborsiamo. Senza moduli complicati, senza domande insistenti.
 
-Possiamo permettercelo per una ragione semplice: chi prova i prodotti, nella stragrande maggioranza dei casi, li ricompra. I numeri della garanzia ce lo confermano ogni mese.
+Possiamo permettercelo per una ragione semplice: chi prova i prodotti, nella maggior parte dei casi, li ricompra. <!-- LEGAL-FIX: era "nella stragrande maggioranza dei casi... I numeri della garanzia ce lo confermano ogni mese" — riferimento a dati/statistiche interne non pubblicate: ogni claim quantitativo deve essere sostanziabile con evidenze documentate (Reg. 655/2013, supporto probatorio) -->
 
 E per chi si chiede il resto: spedizione tracciata in 24-48 ore, gratuita sopra i 39 euro. Il Bundle completo Giorno+Notte — Arnica più Argilla — è a 44,99 €, quindi viaggia gratis.
 

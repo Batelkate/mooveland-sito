@@ -55,9 +55,9 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 **TITOLO:** Perché tutti parlano di arnica? Cosa conta davvero
 **SCRIPT (~45s)**
 - *Problema:* "Arnica ovunque: creme, gel, oli. Ma allora perché i risultati percepiti sono così diversi?"
-- *Spiegazione:* "L'Arnica Montana è una pianta di montagna usata da generazioni per il massaggio muscolare. Il punto è la concentrazione: tanti prodotti ne contengono percentuali minime."
+- *Spiegazione:* "L'Arnica Montana è una pianta di montagna usata da generazioni per il massaggio muscolare. Il punto è la concentrazione: da prodotto a prodotto può cambiare moltissimo, e l'etichetta lo racconta." <!-- LEGAL-FIX: era "tanti prodotti ne contengono percentuali minime" — denigrazione implicita dei concorrenti (criterio correttezza Reg. 655/2013) -->
 - *Gesto pratico:* "Quando scegliete un prodotto all'arnica, girate la confezione e guardate l'INCI: più l'arnica è in alto nella lista, più ce n'è."
-- *Prodotto:* "Nella formula Mooveland è al 98% — tra le concentrazioni più alte in un cosmetico. È la differenza tra 'spalmare qualcosa' e sentire la pelle ringraziare."
+- *Prodotto:* "Nella formula Mooveland è al 98%: quasi tutto il barattolo è arnica, e lo leggete al primo posto dell'INCI. <!-- LEGAL-FIX: era "tra le concentrazioni più alte in un cosmetico" — claim comparativo di superiorità non sostanziabile senza analisi di mercato documentata --> È la differenza tra 'spalmare qualcosa' e sentire la pelle ringraziare."
 **DESCRIZIONE:** Arnica Montana: cos'è, perché si usa per il massaggio muscolare e come leggere l'INCI per capire la concentrazione. Arnica Mooveland: Arnica Montana al 98%, made in Italy. mooveland.it
 **TAG:** #Shorts #arnicamontana #ingredienti #massaggiomuscolare
 
@@ -112,9 +112,9 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 **TAG:** #Shorts #gambepesanti #lavoroinpiedi #automassaggio
 
 ### Short 11 · DOMS (da G12)
-**TITOLO:** Perché i muscoli fanno male 2 giorni dopo la palestra (DOMS)
+**TITOLO:** Perché i muscoli si fanno sentire 2 giorni dopo la palestra (DOMS) <!-- LEGAL-FIX: era "Perché i muscoli fanno male" — riferimento diretto al dolore in un contenuto che presenta i prodotti = claim antidolorifico implicito -->
 **SCRIPT (~50s)**
-- *Problema:* "Il dolore che arriva due giorni dopo la palestra ha un nome: DOMS."
+- *Problema:* "Quell'indolenzimento che arriva due giorni dopo la palestra ha un nome: DOMS." <!-- LEGAL-FIX: era "Il dolore che arriva due giorni dopo la palestra" — niente "dolore" in prossimità del prodotto -->
 - *Spiegazione:* "I muscoli si fanno sentire 24-48 ore dopo un allenamento intenso. È normale: è il segnale che avete lavorato."
 - *Gesto pratico:* "Cosa aiuta: idratazione, movimento leggero — non il divano — e il massaggio della zona affaticata."
 - *Prodotto:* "Io dopo le sessioni pesanti uso il protocollo completo: Arnica Mooveland subito dopo la doccia, Argilla Moovelab la notte. Il giorno dopo si riparte."
@@ -126,9 +126,9 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 **SCRIPT (~40s)**
 - *Problema:* "Potrei dirvi io quanto sono validi i miei prodotti. Ma varrebbe poco."
 - *Spiegazione:* "Quando a parlare è un collega che lavora sui corpi ogni giorno, per me vale più di mille pubblicità."
-- *Prova (recensione a schermo):* "Questa è la recensione di Antoni, verificata sul sito: 'Lo uso molto con i miei pazienti e lo ho anche regalato perché molto efficace. Facile da applicare, profumo gradevole.'"
+- *Prova (recensione a schermo):* "Questa è la recensione di Antoni, pubblicata sul nostro sito e citata parola per parola: <!-- LEGAL-FIX: era "verificata sul sito" — Direttiva Omnibus: "verificata" è dichiarabile solo specificando e potendo dimostrare il processo di verifica dell'acquisto --> 'Lo uso molto con i miei pazienti e lo ho anche regalato perché molto efficace. Facile da applicare, profumo gradevole.'"
 - *Prodotto:* "Grazie Antoni. Tutte le recensioni reali le trovate su mooveland.it. E se lo provate, scrivete anche la vostra: le leggo tutte."
-**DESCRIZIONE:** Recensione reale di Antoni, professionista che usa Mooveland con i suoi pazienti. Tutte le recensioni verificate su mooveland.it
+**DESCRIZIONE:** Recensione reale di Antoni, professionista che usa Mooveland con i suoi pazienti. Tutte le recensioni, citate testualmente, su mooveland.it <!-- LEGAL-FIX: era "recensioni verificate" — Omnibus: niente "verificate" senza processo di verifica dichiarato -->
 **TAG:** #Shorts #recensioni #mooveland #benesseremuscolare
 
 ### Short 13 · "È solo argilla" (da G15)
@@ -157,7 +157,7 @@ Strategia: YouTube è **ricerca-driven** e premia contenuto educativo evergreen 
 - *Problema:* "Comprare un cosmetico online senza averlo provato sulla pelle: capisco il dubbio."
 - *Spiegazione:* "Per questo su tutti i prodotti Mooveland c'è la garanzia Soddisfatti o Rimborsati di 30 giorni. Vera, senza asterischi."
 - *Gesto pratico:* "Li provate con calma, sulla vostra pelle, nella vostra routine. Se non fanno per voi, ci scrivete e vi rimborsiamo."
-- *Prodotto:* "Possiamo permettercelo per un motivo semplice: chi li prova, li ricompra. Spedizione tracciata in 24-48 ore. Il rischio, ce lo prendiamo noi."
+- *Prodotto:* "Possiamo permettercelo per un motivo semplice: la maggior parte di chi li prova, li ricompra. <!-- LEGAL-FIX: era "chi li prova, li ricompra" — affermazione assoluta (100% riacquisto) non veritiera per definizione --> Spedizione tracciata in 24-48 ore. Il rischio, ce lo prendiamo noi."
 **DESCRIZIONE:** La garanzia Soddisfatti o Rimborsati 30 giorni di Mooveland: come funziona, senza asterischi. Spedizione tracciata 24-48h. mooveland.it
 **TAG:** #Shorts #garanzia #soddisfattiorimborsati #madeinitaly
 
