@@ -32,6 +32,7 @@ Garanzia: Soddisfatti o Rimborsati 30 giorni (un barattolo per prodotto, per ord
 - `BLACKLIST-CLAIM.md` — parole vietate/consentite (Reg. UE 655/2013) — RIFERIMENTO PERMANENTE per ogni contenuto futuro
 - `DOSSIER-SCIENTIFICO.md` — fonte citabile per ogni affermazione + risposte pronte alle contestazioni
 - `REVISIONE-SUPERVISORE.md` — verdetti (62/62 pronti) e decisioni in attesa della firma del titolare
+- `contenuti-social.html` — libreria consultabile dei 62 contenuti (filtri per piattaforma, testi integrali, copia rapida); generata dai tre file di script
 
 ## Vincoli non negoziabili
 1. I prodotti sono COSMETICI: mai claim terapeutici, mai patologie come indicazione (vedi BLACKLIST-CLAIM.md)
